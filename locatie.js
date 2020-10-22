@@ -6,7 +6,7 @@ function on_success(position){
 	document.getElementById("altitude").innerHTML = "Altitude = " + position.coords.altitude;
 	var latlon = position.coords.latitude + "," + position.coords.longitude;
 	
-	var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&sizc=400x300&key=AIzaSyC79VLpAvT8L5-hnOzXuDH9SGiwe0VwRqA";
+	var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&key=AIzaSyC79VLpAvT8L5-hnOzXuDH9SGiwe0VwRqA";
 	
 	documnet.getElementById("map").innerHTML = "<img src='"+img_url+"'>";
 	
